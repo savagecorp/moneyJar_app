@@ -1,4 +1,6 @@
 MoneyJarApp::Application.routes.draw do
+  devise_for :users
+
   # get "splash/index"
   
   root :to => "splash#index"

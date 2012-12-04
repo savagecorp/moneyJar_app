@@ -26,6 +26,11 @@ body {
   @include clearfix;
 }
 
+.alert {
+  position: fixed;
+  top: 6px;
+}
+
 
 
 .header, .intro {
