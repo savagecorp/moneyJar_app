@@ -1,0 +1,43 @@
+// Place all the styles related to the static controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import 'bourbon';
+@import "neat";
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: #f4f4f4;
+}
+
+.container {
+  //@include outer-container;
+  width: 100%;
+  @include clearfix;
+}
+
+.inner {
+  display: block;
+  width: 980px;
+  margin: 0 auto;
+  @include clearfix;
+}
+
+
+
+.header, .intro {
+  text-align: center;
+}
+
+.button {
+  @include button;
+  padding: 1em 2em;
+}
+
+.grey {
+  @include button(#999999);
+  padding: 1em 2em;
+}
