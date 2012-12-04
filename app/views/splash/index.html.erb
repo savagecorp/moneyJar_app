@@ -1,19 +1,8 @@
 <% if user_signed_in? %>
 
-<div class="container header" style="background: teal;">
-  <div class="inner">
-    <h1 style="color: #fff;">The Jar</h1>
-        <div style="margin-bottom: 6em;">          
-         <%= link_to destroy_user_session_path, :method => :delete, :class => "button grey" do %>
-           <h2>Sign Out</h2>
-          <% end %>
-        </div>  
-  </div>
-</div>
+<%= render "partial" %>
 
 <% else %>
-
-
 
 <div class="container header" style="background: red;">
   <div class="inner">

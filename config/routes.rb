@@ -4,6 +4,7 @@ MoneyJarApp::Application.routes.draw do
   # get "splash/index"
   
   root :to => "splash#index"
+  get "notes" => "splash#notes"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

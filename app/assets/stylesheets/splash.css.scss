@@ -31,18 +31,15 @@ body {
   top: 6px;
 }
 
-
-
 .header, .intro {
   text-align: center;
 }
 
-.button {
-  @include button;
+.button, .grey, .blue {
   padding: 1em 2em;
 }
 
-.grey {
-  @include button(#999999);
-  padding: 1em 2em;
-}
+.button { @include button; }
+
+.grey { @include button(#999999); }
+.blue { @include button(#008acc); }
